@@ -1,4 +1,4 @@
-**Update 2018.07.08**: now working with the latest version of RetinaNet.
+Our purpose of this project is to experiment what factors the bot uses to discover Waldo in the puzzles. Is it his hat? His shirt? His glasses? We made a variety of images with altered Waldo and we are using these to train the new bot. A majority of the puzzles include Wanda too. The actual bot was taken from https://github.com/cparrarojas/find-wally. Below is information from his repository. *The code was not created by us
 
 # Find Wally
 
