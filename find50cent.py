@@ -1,5 +1,6 @@
 import glob
 import os
+import time
 
 while True:
     cents = glob.glob("./snapshots/*")
@@ -13,5 +14,6 @@ while True:
     
 
     for key in  cents:
+        time.sleep(1)
         os.remove(key)
         print ("removing " + key)
