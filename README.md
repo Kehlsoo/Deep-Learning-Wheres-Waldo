@@ -8,6 +8,12 @@ The script is based on Tadej's [`find_wally_pretty`](https://github.com/tadejmag
 
 ![Wally + Wenda](https://raw.githubusercontent.com/cparrarojas/find-wally/master/results/wallywenda.png)
 
+## Training 
+ python3 ../../keras-retinanet/keras_retinanet/bin/train.py --weights weights.h5 --steps 1500 --freeze-backbone --random-transform --image-min-side 1800 --image-max-side 3000 csv csv/annotations.csv csv/classes.csv --val-annotations csv/val_annotations.csv
+
+## Converting training h5 to interface h5
+python3 ../../keras-retinanet/keras_retinanet/bin/convert_model.py final50_08_63.h5 convertfinal_08_63.h5
+
 ## Usage
 ```
 python find_wally.py PATH_TO_MODEL PATH_TO_IMAGE_1 PATH_TO_IMAGE_2...
