@@ -14,12 +14,12 @@ The script is based on Tadej's [`find_wally_pretty`](https://github.com/tadejmag
 ## Converting training h5 to interface h5
 python3 ../../keras-retinanet/keras_retinanet/bin/convert_model.py final50_08_63.h5 convertfinal_08_63.h5
 
-## Usage
+## How to run
 ```
 python find_wally.py PATH_TO_MODEL PATH_TO_IMAGE_1 PATH_TO_IMAGE_2...
 ```
 
-Images are shown one at a time. If no image path is provided, the script will randomly choose one image from the training+validation directory and another one from the testing directory.
+Images are shown one at a time. If no image path is provided, the script will randomly choose one image from the training+validation directory and another one from the testing directory. We used images from the training images file which were not used for training the model.
 
 The model file can be downloaded from [here](https://github.com/cparrarojas/find-wally/releases/download/0.2/weights.h5).
 
